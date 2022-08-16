@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of America</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- -------header section start --------- -->
+    <header>
+        <h1 class="text-5xl mt-6 text-green-400 text-center font-semibold">Let's Start to transction your Money...</h1>
+    </header>
+    <!-- -------header section end --------- -->
+    <main>
+        <!-- ------- deposit,withdraw,balance show section start----- -->
+        <section class="mt-5">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-lime-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-medium">Total Deposit</h4>
+                    <h2 class="text-5xl">$<span id="total-deposit">00</span></h2>
+                </div>
+                <div class="bg-teal-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-medium">Total Withdraw</h4>
+                    <h2 class="text-5xl">$<span id="total-withdraw">00</span></h2>
+                </div>
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-medium">Total Balance</h4>
+                    <h2 class="text-5xl">$<span id="total-balance">1250</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- ------- deposit,withdraw,balance show section start----- -->
+        <!-- ------- deposit,withdraw input section start----- -->
+        <section class="mt-5">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-lime-400 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-3">Please Deposit</h4>
+                    <input class="block mb-2 w-3/5 px-3" type="text" name="" id="deposit-field" placeholder="Enter deposit amount $">
+                    <button id="btn-deposit" class="bg-violet-600 px-5 py-2 rounded-xl text-xl font-medium text-white hover:bg-violet-400" type="submit">Deposit</button>
+                </div>
+                <div class="bg-teal-400 p-8 rounded-lg">
+                    <h4 class="text-2xl mb-3">Please Withdraw</h4>
+                    <input class="block mb-2 w-3/5 px-3" type="text" name="" id="withdraw-field" placeholder="Enter withdraw amount $">
+                    <button id="btn-withdraw" class="bg-violet-600 px-5 py-2 rounded-xl text-xl font-medium text-white hover:bg-violet-400" type="submit">Withdraw</button>
+                </div>
+            </div>
+            <br><br>
+            <p class="text-center">Developed by Ather Biswas @Copyright 2022</p>
+        </section>
+        <!-- ------- deposit,withdraw input section start----- -->
+    </main>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
